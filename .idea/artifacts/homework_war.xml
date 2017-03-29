@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="homework:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/homework_war</output-path>
+    <root id="archive" name="homework_war.war">
+      <element id="artifact" artifact-name="homework:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="KotlinJavaRuntime" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
