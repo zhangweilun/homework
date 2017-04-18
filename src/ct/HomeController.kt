@@ -13,11 +13,11 @@ class HomeController : Controller() {
     }
     fun submit(){
         val context = JFinal.me().servletContext
-
-        val remoteAddr = request.remoteAddr
-        val student = getBean(Student::class.java)
+//        val remoteAddr = request.remoteAddr
+        val student = getBean(Student::class.java,"student")
+        val times = context.getAttribute("times").toString().toInt()
         setAttr("student",student)
-
-        print(student)
+        setAttr("times",times)
+        render("/view/submit.jsp")
     }
 }

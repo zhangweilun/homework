@@ -6,6 +6,7 @@ import com.jfinal.render.ViewType
 import com.jfinal.template.Engine
 import ct.HomeController
 import handler.CountHandler
+import model.Count
 
 /**
  * Created by willian on 2017/3/28.
@@ -13,7 +14,9 @@ import handler.CountHandler
 class Config : JFinalConfig() {
     override fun afterJFinalStart() {
         val context = JFinal.me().servletContext
-        context.setAttribute("count",0)
+        context.setAttribute("times",0)
+        val list = HashMap<String, Count>()
+        context.setAttribute("list",list)
     }
 
 

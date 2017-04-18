@@ -26,50 +26,51 @@
 </head>
 <body>
 <center>
-    <p>张威伦 学号：5701114037</p>
+    <h2>${student.name}您是第${times}位访问者</h2>  
+
 </center>
 <center>
-    <form method="post" action="/submit">
+    <form method="post" action="${pageContext.request.contextPath}/submit">
     <table border="1">
         <tr>
             <th >姓名:</th>
-            <td ><input style="border:none;height: 100%" type="text" name="student.name"/></td>
+            <td ><input style="border:none;height: 100%" type="text" name="student.name" value="朱昱炜"/></td>
             <th>性别:</th>
-            <td ><input type="text" name="student.sex"/></td>
+            <td ><input type="text" style="border:none;height: 100%" name="student.sex" value="男"/></td>
             <th>出生年月:</th>
             <td>1996.01.18</td>
-            <td rowspan="4" style="width:150px" ></td>
+            <td rowspan="4" style="width:150px;border: none;height: 100%" ></td>
         </tr>
         <tr>
             <th >民族:</th>
-            <td ><input type="text" name="student.nation"/></td>
+            <td ><input type="text" style="border:none;height: 100%" name="student.nation" value="汉"/></td>
             <th>政治面貌:</th>
-            <td><input type="text" name="name"/></td>
+            <td><input type="text" style="border:none;height: 100%" name="student.zhengzhi" value="团员"/></td>
             <th>身高:</th>
-            <td><input type="text" name="student.height"/></td>
+            <td><input type="text" style="border:none;height: 100%" name="student.height" value="1.7"/></td>
         </tr>
         <tr>
             <th>学制:</th>
-            <td><input type="text" name="name"/></td>
+            <td><input type="text" style="border:none;height: 100%" name="student.studyTime" value="4"/></td>
             <th>学历:</th>
-            <td><input type="text" name="name"/></td>
+            <td><input type="text" style="border:none;height: 100%" name="student.studyLevel" value="本科"/></td>
             <th>户籍:</th>
-            <td><input type="text" name="name"/></td>
+            <td><input type="text" style="border:none;height: 100%" name="student.home" value="江苏"/></td>
         </tr>
         <tr>
             <th>专业:</th>
-            <td><input type="text" name="student.subject"/></td>
+            <td><input type="text" style="border:none;height: 100%" name="student.subject"/></td>
             <th colspan="2" >毕业院校:</th>
-            <td colspan="2"><input type="text" name="name"/></td>
+            <td colspan="2"><input type="text" style="border:none;height: 100%" name="student.school"/></td>
         </tr>
         <tr>
             <th colspan="7">技能特长或爱好</th>
         </tr>
         <tr>
             <th>外语等级:</th>
-            <td colspan="2"><input type="text" name="name"/></td>
+            <td colspan="2"><input type="text" style="border:none;height: 100%" name="name"/></td>
             <th>计算机:</th>
-            <td colspan="3"><input type="text" name="name"/></td>
+            <td colspan="3"><input type="text" style="border:none;height: 100%" name="name"/></td>
         </tr>
         <tr>
             <th colspan="7">个人履历</th>
